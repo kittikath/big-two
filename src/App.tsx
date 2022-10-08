@@ -1,15 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
+import { CustomButton } from './components/Button';
 import './App.css';
+import { Container } from '@mui/system';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <h2>
+          <code>Big 2</code>
+        </h2>
+        {/* <input>Enter Code</input> */}
+        <Container maxWidth="md">
+          <Container maxWidth="xs">
+            <CustomButton text="Join Game"/>
+            <CustomButton text="Create Game"/>
+            <CustomButton text="Tutorial"/>
+            <CustomButton text="About"/>
+          </Container>
+        </Container>
+        
+
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
